@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>CPU-Scheduler</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>CPU-Scheduler</h1>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <h3>{{ message }}</h3>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form action="" method="post" role="form">
+            <h2>FCFS Alg.</h2>
+
+            {{ form1.nOfP.label(class_='example_z') }} <div class="example_z">:</div> {{ form1.nOfP(class_='example_x') }}
+
+            <div class="btn-go" align="left">
+                    <input type="submit" name="FCFS" value="GO" class="example_b"></input>
+            </div>
+        </form>
+
+        <form action="" method="post" role="form">
+            <h2>SJF Alg.</h2>
+
+            {{ form2.nOfP.label(class_='example_z') }} <div class="example_z">:</div> {{ form2.nOfP(class_='example_x') }}
+
+            <div class="btn-go" align="left">
+                    <input type="submit" name="SJF" value="GO" class="example_b"></input>
+            </div>
+        </form>
+
+        <form action="" method="post" role="form">
+            <h2>SRTF Alg.</h2>
+
+            {{ form3.nOfP.label(class_='example_z') }} <div class="example_z">:</div> {{ form3.nOfP(class_='example_x') }}
+
+            <div class="btn-go" align="left">
+                    <input type="submit" name="SRTF" value="GO" class="example_b"></input>
+            </div>
+        </form>
+
+        <form action="" method="post" role="form">
+            <h2>RR Alg.</h2>
+
+            {{ form4.nOfP.label(class_='example_z') }} <div class="example_z">:</div> {{ form4.nOfP(class_='example_x') }} <p></p>
+            {{ form4.quantum.label(class_='example_z') }} <div class="example_z">&MediumSpace;&MediumSpace;:</div> {{ form4.quantum(class_='example_x') }}
+
+            <div class="btn-go" align="left">
+                    <input type="submit" name="RR" value="GO" class="example_b"></input>
+            </div>
+        </form>
+
+
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+

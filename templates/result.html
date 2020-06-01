@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>{{alg_name}} Alg.</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>{{alg_name}} Alg.</h1>
+        
+        <h2>Results</h2>
+        {{ table_WT }}
+        {{ table_TAT }}
+
+        <div style="text-align: center;">
+            <h4 style="text-align: center;"> AWT = {{AWT}} </h4>
+            <h4 style="text-align: center;"> ATAT = {{ATAT}} </h4>
+        </div>
+
+        <div class="button_cont" align="center">
+            <a class="example_e" href="{{ url_for('index')}}" rel="nofollow noopener">
+                    Home Page
+            </a>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

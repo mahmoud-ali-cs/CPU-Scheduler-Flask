@@ -1,0 +1,4 @@
+https://flask-table.readthedocs.io/en/stable/
+
+https://pypi.org/project/Flask-Table/
+

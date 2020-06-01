@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/30121763/how-to-use-a-wtforms-fieldlist-of-formfields
+
+https://wtforms.readthedocs.io/en/stable/fields.html
+
+https://stackoverflow.com/questions/28375565/add-input-fields-dynamically-with-wtforms
+
+https://gist.github.com/doobeh/5d0f965502b86fee80fe
+

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Vector Space Model</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css.scss') }}">
+    </head>
+    <body>
+        <h1>Vector Space Model</h1>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <h3>{{ message }}</h3>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form action="" method="post">
+            {{ form.rawQuery.label(class_='example_z') }} <div class="example_z">:</div> {{ form.rawQuery(placeholder='A B C D E', class_='example_x') }}
+            <br>
+            {{ form.csrf_token }}
+            <div class="btn" align="left">
+                    <p>{{ form.submit(class_='example_b') }}</p>
+            </div>
+        </form>
+        
+        <!-- <a href="{{ url_for('index')}}">
+            Home Page
+        </a> -->
+
+        <div class="button_cont" align="center">
+            <a class="example_e" href="{{ url_for('index')}}" rel="nofollow noopener">
+                    Home Page
+            </a>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
